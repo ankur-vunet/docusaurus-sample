@@ -136,6 +136,9 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+	future: {
+    experimental_router: 'hash', // Use the hash router
+  },
 };
 
 export default config;
