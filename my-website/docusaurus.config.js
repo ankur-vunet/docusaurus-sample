@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,6 +25,8 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -56,8 +58,13 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // Removed sitemap plugin from here
       }),
     ],
+  ],
+
+  plugins: [
+    // Add any other plugins here if needed
   ],
 
   themeConfig:
@@ -78,7 +85,11 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             href: 'https://github.com/ankur-vunet/docusaurus-sample',
             label: 'GitHub',
@@ -135,8 +146,23 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      algolia: {
+        appId: '9EP13X8RAE',
+        apiKey: '5af081939d20b9367f84ba918d1beed9',
+        indexName: 'ankur-vunetio',
+        contextualSearch: true,
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+        searchParameters: {},
+        searchPagePath: 'search',
+        insights: false,
+      },
     }),
-	future: {
+
+  future: {
     experimental_router: 'hash', // Use the hash router
   },
 };
