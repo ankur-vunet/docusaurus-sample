@@ -8,7 +8,7 @@ export default {
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
   "url": "https://ankur-vunet.github.io",
-  "baseUrl": "/Sample-Repo/",
+  "baseUrl": "/",
   "organizationName": "ankur-vunet",
   "projectName": "docusaurus-sample",
   "onBrokenLinks": "throw",
