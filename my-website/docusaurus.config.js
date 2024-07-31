@@ -147,9 +147,9 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: '9EP13X8RAE',
-        apiKey: '5af081939d20b9367f84ba918d1beed9',
-        indexName: 'ankur-vunetio',
+        appId: 'FDOMH2LR75',
+        apiKey: 'ca98376492ed47ecb8018a8b39b0f75e',
+        indexName: 'edy',
         contextualSearch: true,
         externalUrlRegex: 'external\\.com|domain\\.com',
         replaceSearchResultPathname: {
@@ -162,9 +162,9 @@ const config = {
       },
     }),
 
-  future: {
-    experimental_router: 'hash', // Use the hash router
-  },
+  //future: {
+    //experimental_router: 'hash', // Use the hash router
+  //},
 };
 
 export default config;

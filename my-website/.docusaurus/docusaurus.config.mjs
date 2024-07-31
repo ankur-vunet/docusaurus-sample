@@ -7,7 +7,7 @@ export default {
   "title": "My Site",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
-  "url": "https://ankur-vunet.github.io",
+  "url": "https://66a8d17e7801f347e5c9f64c--delightful-kulfi-a28ee9.netlify.app",
   "baseUrl": "/",
   "organizationName": "ankur-vunet",
   "projectName": "docusaurus-sample",
@@ -40,7 +40,6 @@ export default {
       }
     ]
   ],
-  "plugins": [],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
@@ -323,14 +322,14 @@ export default {
       ]
     },
     "algolia": {
-      "appId": "9EP13X8RAE",
-      "apiKey": "5af081939d20b9367f84ba918d1beed9",
-      "indexName": "ankur-vunetio",
+      "appId": "FDOMH2LR75",
+      "apiKey": "ca98376492ed47ecb8018a8b39b0f75e",
+      "indexName": "edy",
       "contextualSearch": true,
       "externalUrlRegex": "external\\.com|domain\\.com",
       "replaceSearchResultPathname": {
         "from": "/docs/",
-        "to": "/"
+        "to": "/docs/"
       },
       "searchParameters": {},
       "searchPagePath": "search",
@@ -354,20 +353,21 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "baseUrlIssueBanner": true,
   "future": {
-    "experimental_router": "hash",
     "experimental_storage": {
       "type": "localStorage",
       "namespace": false
-    }
+    },
+    "experimental_router": "browser"
   },
-  "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"
   ],
   "customFields": {},
+  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],
